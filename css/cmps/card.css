@@ -1,0 +1,9 @@
+.card .card-image {
+    margin-bottom: 0.76rem;
+}
+.card .card-tag {
+    color: var(--clr3);
+    font-family: ubuntu, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}

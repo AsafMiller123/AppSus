@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: playfair, serif;
+    color: var(--clr1);
+}
+
+body {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.714285714285714;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1em;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.142857142857143em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+a {
+    color: var(--clr2);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    /* this is for responsive images */
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--clr2);
+    background-color: transparent;
+    padding: 1em 0;
+    max-width: 400px;
+    width: 100%; 
+}
