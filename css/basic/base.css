@@ -1,50 +1,141 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
-    font-family: playfair, serif;
-    color: var(--clr1);
+    line-height: 1.5em;
+    font-family: Lato-Regular, serif;
 }
 
 body {
     margin: 0;
-    font-size: 0.875rem;
-    line-height: 1.714285714285714;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1em;
-    font-weight: 500;
-    line-height: 1.2;
+
+
+h3 {
+    margin: 0;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding: 1em
 }
 
-h2 {
-    font-size: 2.142857142857143em;
+form {
+    border: 1px solid;
+    width: 79vw;
+    margin-top: 1em;
+    height: 60vh
 }
 
-p {
-    margin: 0 0 1em;
+li a {
+    border: none;
 }
+
+.mail-preview {
+    display: grid;
+    grid-template-columns:  100px 200px 1fr 100px;
+    align-items: center;
+}
+
+
+.mail-title {
+    margin-right: 2em;
+}
+
+
+
+.mail-details {
+    margin-top: 1em;
+    margin-right: 2em;
+    width: 85vw;
+    height: 70vh;
+    border: 1px solid rgb(206 204 204)
+}
+
+
+.search-email {
+    height: 2em;
+    width: 20em;
+    background-color: rgb(244 235 235);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 2em;
+
+}
+
+
+.icon {
+    height: 16px;
+    width: 16px
+}
+
+span {
+    margin-left: 3em;
+}
+
 
 a {
-    color: var(--clr2);
-}
-
-a:hover {
+    cursor: pointer;
+    border: 1px solid rgb(49 22 22 / 69%);
+    border-radius: 30px;
+    color: rgb(13 13 13 / 86%);
     text-decoration: none;
 }
 
-img {
-    /* this is for responsive images */
-    width: 100%;
+
+.textarea-message {
+    width: 844px;
+    height: 368px;
+    border: 1px solid rgb(206 204 204);
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid var(--clr2);
-    background-color: transparent;
-    padding: 1em 0;
-    max-width: 400px;
-    width: 100%; 
+.page-body {
+    display: flex;
+}
+
+.mails-list-upper-section {
+    display: flex;
+}
+
+.favorite-icon {
+    height: 11px;
+    width: 10px
+}
+
+.list-email-folder {
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.list-email-folder-li {
+    padding: 0.3em 1em;
+}
+
+.list-email-folder-li:hover {
+    background-color: #ced3d0f7;
+    border-radius: 0 20px 20px 0;
+}
+
+.add-new-mail {
+    padding: 10px;
+}
+
+.add-new-mail:hover {
+    box-shadow: 2px 2px;
+}
+
+.marked {
+    background-color: #efaaa5;
+    color: #df4f44;
+    border-radius: 0 20px 20px 0;
+}
+
+.app-main {
+    width: 100%;
 }

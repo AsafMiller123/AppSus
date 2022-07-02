@@ -1,0 +1,47 @@
+.mail-edit-app-main {
+    position: relative;
+}
+
+
+.mail-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.to-mail {
+    border-bottom: 1px solid rgb(206 204 204);
+    padding: 7px;
+    display: flex;
+    align-items: center
+}
+
+
+.input-message {
+    outline: none;
+    border: none;\
+    width: 100%;
+}
+
+
+.copy-message {
+    border-bottom: 1px solid rgb(206 204 204);
+    padding: 7px;
+    display: flex;
+    align-items: center
+}
+
+.bcc {
+    border-bottom: 1px solid rgb(206 204 204);
+    padding: 7px;
+    display: flex;
+    align-items: center
+}
+
+
+.subject-message {
+    border-bottom: 1px solid rgb(206 204 204);
+    padding: 7px;
+    display: flex;
+    align-items: center
+}

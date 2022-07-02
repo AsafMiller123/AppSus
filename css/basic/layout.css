@@ -11,6 +11,6 @@
     flex-wrap: wrap;
 }
 
-.card-layout > * {
+.card-layout>* {
     margin-bottom: 48px;
 }

@@ -21,7 +21,7 @@ function get(entityType, entityId) {
 
 //create new item
 function post(entityType, newEntity) {
-    newEntity.id = _makeId()
+    newEntity.id = _makeId();
     return query(entityType)
         .then(entities => {
             entities.push(newEntity);
@@ -55,7 +55,12 @@ function remove(entityType, entityId) {
     return query(entityType)
         .then(entities => {
             const idx = entities.findIndex(entity => entity.id === entityId);
-            entities.splice(idx, 1)
+            const targetedEntity = entities[idx];
+            if (targetedEntity.shouldBeRemoved) {
+                entities.splice(idx, 1);
+            } else {
+                targetedEntity.shouldBeRemoved = true;
+            }
             _save(entityType, entities)
         })
 }

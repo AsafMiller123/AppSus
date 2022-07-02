@@ -1,0 +1,37 @@
+.mail-preview-container {
+    align-items: center;
+    border-bottom: 1px solid rgb(206 204 204);
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px 40px;
+}
+
+.mail-preview-container:hover {
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 0 20px 20px 0;
+}
+
+.mails-container {
+    display: flex;
+    margin-top: 1em;
+    align-items: baseline;
+}
+
+.mail-details-container {
+    width: 100%;
+    margin: 2em;
+}
+
+.mail-list-container {
+    width: 100%;
+    margin: 1em;
+}
+
+.email-folder-container {
+    margin-top: 2em;
+    padding: 0 1em;
+}
+
+.mail-filter {
+    margin: 1em 0 0 3em
+}

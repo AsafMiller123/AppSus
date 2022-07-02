@@ -1,22 +1,22 @@
 import { router } from './router.js'
-import appFooter from './cmps/app-footer.cmp.js'
 import appHeader from './cmps/app-header.cmp.js'
 import userMsg from './cmps/user-msg.cmp.js'
+import emailFolderList from './cmps/email-folder-list.cmp.js'
 
 const options = {
     template: `
         <section>
             <app-header />
-            <user-msg/>
-            <router-view/>
+            <div class="page-body">
+                <email-folder-list />
+                <router-view />
+            </div>
             <app-footer />
         </section>
-
     `,
     components: {
         appHeader,
-        appFooter,
-        userMsg
+        emailFolderList
     }
 };
 

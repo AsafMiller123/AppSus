@@ -1,18 +1,16 @@
 /* SETUP  */
-@import 'setup/vars.css';
-@import 'setup/typography.css';
+@import 'setup/appContainers.css';
 
 /* BASE */
-/* @import 'basic/base.css'; */
-@import 'basic/layout.css';
+@import 'basic/base.css';
+@import 'basic/buttons.css';
 @import 'basic/helpers.css';
 
 /* COMPONENTS */
-/* @import 'components/main-header.css';
-@import 'components/screen.css';
-@import 'components/maild.css';
-@import 'components/newsletter.css'; */
+@import 'cmps/main-header.css';
+@import 'cmps/mail-edit.css';
+/* @import 'components/newsletter.css'; */
 @import 'cmps/mail-details.css';
 
 /* Media Queries */
-/* @import 'mq/mq.css'; */
+@import 'mq/mq.css';

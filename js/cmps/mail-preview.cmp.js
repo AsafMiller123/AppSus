@@ -2,8 +2,10 @@ export default {
     props: ['mail'],
     template: `
         <section class="mail-preview">
-            <p>title: {{mail.title}}</p>
-            <p>details: {{mail.details}}</p>
+            <p>{{mail.name}}</p>
+            <p class="mail-subject ellipsis">{{mail.subject}}</p>
+            <p class="mail-preview-body ellipsis">{{mail.body}}</p>
+            <p class="mail-sending-time">{{(new Date(mail.sentAt)).toLocaleDateString()}}</p>
         </section>
     `,
     data() {
@@ -13,9 +15,3 @@ export default {
     methods: {},
     computed: {}
 }
-
-
-
-
-
-// שיניתי vendor max speed detailsEdit
