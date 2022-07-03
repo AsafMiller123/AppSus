@@ -9,7 +9,7 @@ export default {
         <section class="app-main">
             <mail-filter class="mail-filter" @filtered="setFilter" />
             <div class="mails-container">
-                <mail-list :mails="mailsForDisplay" @remove="removeEmail" @updateEmail="updateEmail" @sortByTitle="sortByTitle" @sortBySentDate="sortBySentDate" >
+                <mail-list :mails="mailsForDisplay" @remove="removeEmail" @updateEmail="updateEmail" @sortBySubject="sortBySubject" @sortBySentDate="sortBySentDate" >
             </div>
         </section>
     `,
@@ -46,10 +46,6 @@ export default {
                     showErrorMsg('Updated email was failed to be updated')
                 });
         },
-
-        setFilter(filterBy) {
-            this.filterBy = filterBy;
-        },
         getAppropriateEmailsList(mails, currentRoute) {
             switch (currentRoute) {
                 case '/inbox':
@@ -64,7 +60,7 @@ export default {
                     return mails.filter(mail => !mail.isCompleted);
             }
         },
-        sortByTitle(isAscending) {
+        sortBySubject(isAscending) {
             isAscending ? this.mails.sort((a, b) => a.subject.localeCompare(b.subject)) : this.mails.sort((a, b) => b.subject.localeCompare(a.subject));
         },
         sortBySentDate(isAscending) {
@@ -72,6 +68,8 @@ export default {
         },
 
         setFilter(filterBy) {
+            console.log('filterBy ', filterBy);
+
             this.filterBy = filterBy
         }
 
@@ -81,8 +79,9 @@ export default {
         mailsForDisplay() {
             var mails = this.mails
             if (this.filterBy?.subject) {
+                console.log('here');
                 const regex = new RegExp(this.filterBy.subject, 'i')
-                mails = mails.filter(mail => regex.test(mail.subject))
+                mails = mails.filter(mail => regex.test(mail.subject));
             }
             return mails;
         }

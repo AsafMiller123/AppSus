@@ -30,7 +30,7 @@ li a {
 
 .mail-preview {
     display: grid;
-    grid-template-columns:  100px 200px 1fr 100px;
+    grid-template-columns: 100px 200px 1fr 100px;
     align-items: center;
 }
 
@@ -40,33 +40,6 @@ li a {
 }
 
 
-
-.mail-details {
-    margin-top: 1em;
-    margin-right: 2em;
-    width: 85vw;
-    height: 70vh;
-    border: 1px solid rgb(206 204 204)
-}
-
-
-.search-email {
-    height: 2em;
-    width: 20em;
-    background-color: rgb(244 235 235);
-    border: none;
-    border-radius: 5px;
-}
-
-
-
-.actions {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    right: 2em;
-
-}
 
 
 .icon {
@@ -100,6 +73,7 @@ a {
 
 .mails-list-upper-section {
     display: flex;
+    align-items: center;
 }
 
 .favorite-icon {
@@ -138,4 +112,11 @@ a {
 
 .app-main {
     width: 100%;
+    font-family: sans-serif;
+}
+
+.sort-by {
+    font-family: sans-serif;
+    height: 1.3rem;
+
 }

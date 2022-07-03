@@ -7,11 +7,11 @@ export default {
         <section class="mail-list-container">
             <div class="mails-list-upper-section">
                 <span class="unread-emails-count"><strong>Unread Emails: </strong>{{getUnreadCount()}}</span>
-                <strong>Sort By: </strong><select v-model="selected">
+                <strong>Sort By: </strong><select v-model="selected" class="sort-by">
                     <option>Ascending Date</option>
                     <option>Descending Date</option>
-                    <option>Ascending Title</option>
-                    <option>Descending Title</option>
+                    <option>Ascending Subject</option>
+                    <option>Descending Subject</option>
                  </select>
             </div>
             <ul class="mail-list" v-if="mails?.length > 0">
@@ -20,6 +20,7 @@ export default {
                        <mail-preview :mail="mail" />
                        <img class="icon" src="icons/delete-icon.jpg" @click.stop="remove(mail.id)">
                        <img class="icon" :src="getReadStateImgUrl(mail)" @click.stop="updateReadState(mail, !mail.isRead)" />
+
                 </li>
             </ul>
             <div v-else class="emails-list-empty-state">This Folder Is Empty...</div>
@@ -74,19 +75,19 @@ export default {
                 case 'Descending Date':
                     this.sortEmailsByDate(false);
                     break;
-                case 'Ascending Title':
-                    this.sortEmailsByTitle(true);
+                case 'Ascending Subject':
+                    this.sortEmailsBySubject(true);
                     break;
-                case 'Descending Title':
-                    this.sortEmailsByTitle(false);
+                case 'Descending Subject':
+                    this.sortEmailsBySubject(false);
                     break;
             }
         },
         sortEmailsByDate(isAscending) {
             this.$emit('sortBySentDate', isAscending)
         },
-        sortEmailsByTitle(isAscending) {
-            this.$emit('sortByTitle', isAscending)
+        sortEmailsBySubject(isAscending) {
+            this.$emit('sortBySubject', isAscending)
         },
     },
     watch: {

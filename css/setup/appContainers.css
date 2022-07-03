@@ -25,6 +25,7 @@
 .mail-list-container {
     width: 100%;
     margin: 1em;
+    font-family: sans-serif;
 }
 
 .email-folder-container {

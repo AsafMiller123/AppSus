@@ -84,8 +84,8 @@ function _createMails() {
         mails.push(_createMail('iCloud', 'Come visit!', 'Would love to catch up sometimes'));
         mails.push(_createMail('Shani Aharon', 'Would love to catch up sometimes'));
         mails.push(_createMail('onlyFans', 'Would love to catch up sometimes'));
-        mails.push(_createMail('Dor dekel', 'Would love to catch up sometimes'));
-        mails.push(_createMail('Trails', 'Childhood stories', 'Would love to catch up sometimes'));
+        mails.push(_createMail('Dor Dekel', 'Lets have some fun '));
+        mails.push(_createMail('Bar Refaeli', 'Childhood stories', 'Would love to catch up sometimes'));
         mails.push(_createMail('Ferari', 'Climbing mountains', 'Would love to catch up sometimes'));
         mails.push(_createMail('lamburgini', 'Last chance', 'Would love to catch up sometimes'));
         mails.push(_createMail('misterbit', 'Relaxing meditation', 'Would love to catch up sometimes'));

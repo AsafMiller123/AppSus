@@ -19,7 +19,7 @@
 
 .input-message {
     outline: none;
-    border: none;\
+    border: none;
     width: 100%;
 }
 
@@ -44,4 +44,9 @@
     padding: 7px;
     display: flex;
     align-items: center
+}
+
+.mail-edit {
+    margin-left: 2em;
+    font-family: sans-serif;
 }
