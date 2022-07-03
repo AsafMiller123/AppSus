@@ -1,0 +1,52 @@
+.mail-detail {
+    padding: 0 1em;
+    border-bottom: 1px solid rgb(75, 74, 74);
+    line-height: 60px;
+}
+
+.mail-body {
+    width: -webkit-fill-available;
+    height: 28vh;
+    padding: 1em;
+    border: none;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mail-text {
+    padding: 3px;
+}
+
+.emails-list-empty-state {
+    padding: 5em;
+    font-size: 30px;
+}
+
+.back-to-inbox {
+    margin-top: 2em;
+    border: none;
+    font-size: 40px;
+}
+
+.back-to-inbox-container{
+    margin-top: 1em;
+}
+
+.mail-subject {
+    padding: 0 10px;
+}
+
+.mail-preview-body {
+    padding: 0 10px;
+}
+
+.unread-emails-count{
+    margin-right: 1em;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
